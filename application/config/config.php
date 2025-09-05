@@ -23,9 +23,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:81/agro';
+//$config['base_url'] = 'http://localhost:81/agro';
 
-//$config['base_url'] = 'http://192.168.0.251/agro';
+//$config['base_url'] = 'http://192.168.0.18/agro';
+$config['base_url'] = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']==='on' ? 'https' : 'http')
+  . '://' . $_SERVER['HTTP_HOST'] . '/agro/';
 
 /*
 |--------------------------------------------------------------------------
