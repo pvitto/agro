@@ -19,7 +19,7 @@ JsBarcode(canvas, referencia, {
     height: 100,
     displayValue: true
 });
-
+ //notes
 // Obtén la imagen en formato base64
 const imgData = canvas.toDataURL('image/png');
 
